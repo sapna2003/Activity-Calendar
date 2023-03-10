@@ -25,7 +25,7 @@ body {
     background-color: #373c4f;
 }
 .left {
-    width: 60%;
+    width: 90%;
     padding: 20px;
 }
 
@@ -173,7 +173,6 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 5px;
     padding: 0 20px;
     margin-bottom: 20px;
     color: var(--primary-clr);
@@ -182,7 +181,7 @@ body {
     display: flex;
     align-items: center;
     border-radius: 5px;
-    overflow: hidden;
+    /* overflow: hidden; */
     border: 1px solid var(--primary-clr);
 }
 .calendar .goto-today .goto input{
@@ -193,5 +192,21 @@ body {
     border-radius: 5px;
     padding: 0 20px;
     color: var(--primary-clr);
+}
+.calendar .goto-today button{
+    padding:5px 10px;
+    border: 1px solid var(--primary-clr);
     border-radius: 5px;
+    background-color: transparent;
+    cursor: pointer;
+    color: var(--primary-clr);
+}
+.calendar .goto-today button:hover{
+    color: #fff;
+    background-color: var(--primary-clr);
+}
+.calendar .goto-today .goto button{
+    border: none;
+    border-left: 1px solid var(--primary-clr);
+    border-radius: 0;
 }
